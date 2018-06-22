@@ -1,0 +1,7 @@
+@import "_vars.scss";
+@import "_smart-grid.scss";
+
+::selection {
+  background-color: $color-main;
+  color: white;
+}

@@ -1,1 +1,82 @@
 @import "../base/_vars";
+
+.header__wrap {
+  @include row-flex();
+  width: 1140px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.header {
+  background-color: $color-three;
+}
+
+.header__menu {
+  @include col();
+  @include size(9);
+  @include size-lg(9);
+  @include size-md(9);
+  @include size-sm(12);
+  @include size-xs(12);
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 35px;
+}
+
+a.nav__link {
+  color: white;
+  text-decoration: none;
+  transition: color .5s;
+  &:hover {
+    color: $color-hover;
+  }
+}
+
+.header__account {
+  @include col();
+  @include size(3);
+  @include size-lg(3);
+  @include size-md(3);
+  @include size-sm(12);
+  @include size-xs(12);
+  background-color: #b398db;
+  .dropdown-menu {
+    min-width: 285px;
+    top: 135%;
+  }
+}
+
+.header__account .dropdown {
+  //width: 185px;
+  text-align: center;
+  padding-top: 15px;
+  a.dropdown-toggle {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'FiraSansLight', 'Arial', sans-serif;
+    transition-delay: .5s;
+    .fa {
+      color: white;
+      font-size: 22px;
+    }
+    span {
+      color: white;
+    }
+    &:hover {
+      .fa {
+        color: $color-hover;
+      }
+      span {
+        color: $color-hover;
+      }
+    }
+  }
+}

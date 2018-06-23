@@ -85,8 +85,9 @@ gulp.task('fonts', function () {
 
 gulp.task('watch', ['browser-sync'], function () {
     gulp.watch(['./css/**/*.scss', './css/main.scss'], ['sass', browserSync.reload]);
+    gulp.watch('../catalog/view/theme/zoo/template/**/*.twig', [browserSync.reload]);
     gulp.watch('./js/!*.js', ['js', browserSync.reload]);
     gulp.watch('./img/!**/!*', ['images', browserSync.reload]);
 });
 
-gulp.task('default', ['sass', 'js', 'images', 'fonts', 'watch']);
+gulp.task('default', ['watch']);

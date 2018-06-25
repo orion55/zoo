@@ -75,7 +75,7 @@ gulp.task('images', function () {
             use: [pngquant()],
             interlaced: true
         }))
-        .pipe(gulp.dest(docs + 'image/'))
+        .pipe(gulp.dest('../image/catalog/'))
 });
 
 gulp.task('fonts', function () {

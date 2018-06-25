@@ -49,13 +49,12 @@ a.nav__link {
   @include size-xs(12);
   background-color: #b398db;
   .dropdown-menu {
-    min-width: 285px;
+    width: 100%;
     top: 135%;
   }
 }
 
 .header__account .dropdown {
-  //width: 185px;
   text-align: center;
   padding-top: 15px;
   a.dropdown-toggle {
@@ -104,8 +103,8 @@ a.nav__link {
 .head__info {
   @include col();
   @include size(8);
-  @include size-lg(8);
-  @include size-md(8);
+  @include size-lg(7);
+  @include size-md(7);
   @include size-sm(12);
   @include size-xs(12);
   @include row-flex();
@@ -114,8 +113,8 @@ a.nav__link {
 .head__cart {
   @include col();
   @include size(1);
-  @include size-lg(1);
-  @include size-md(1);
+  @include size-lg(2);
+  @include size-md(2);
   @include size-sm(12);
   @include size-xs(12);
 }
@@ -163,4 +162,87 @@ a.nav__link {
   top: 7px;
   left: 10px;
   color: #b5b5b5;
+  font-size: 19px;
+}
+
+#cart {
+  height: 100%;
+}
+
+#cart .btn-block {
+  height: 100%;
+  border-radius: 0;
+  background: linear-gradient(to bottom, #ffd65e 0%, #ef9a5f 100%);
+  padding: 0;
+  border: 0;
+  white-space: normal;
+  i {
+    display: none;
+  }
+  &:before {
+    width: 100%;
+    height: 40px;
+    content: "";
+    background: url("/image/catalog/shopping-cart.png") no-repeat center center;
+    display: block;
+  }
+}
+
+#cart-total {
+  color: white;
+  display: block;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+#cart > ul {
+  padding: 10px;
+}
+
+#cart > ul > li > p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-device-width: 961px) and (max-width: 1199px) {
+  .header__wrap {
+    width: auto;
+  }
+  .head__wrap {
+    width: auto;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-width: 960px) {
+  .header__wrap {
+    width: auto;
+  }
+  .head__wrap {
+    width: auto;
+  }
+  .nav__item {
+    padding-right: 0;
+  }
+  .nav__list {
+    justify-content: space-around;
+  }
+  .header__account .dropdown-menu {
+    width: 100%;
+  }
+  .head__text {
+    font-size: 17px;
+    white-space: normal;
+  }
+  #logo{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header__wrap {
+    width: auto;
+  }
+  .head__wrap {
+    width: auto;
+  }
 }

@@ -75,7 +75,7 @@
 {#<nav id="top">
     <div class="container">{{ currency }}
         {{ language }}
-        <div id="top-links" class="nav pull-right">
+        <div id="top-links" class="nav pull-right"Ж>
             <ul class="list-inline">
                 <li><a href="{{ contact }}"><i class="fa fa-phone"></i></a> <span
                             class="hidden-xs hidden-sm hidden-md">{{ telephone }}</span></li>
@@ -106,7 +106,35 @@
         </div>
     </div>
 </nav>#}
-<header>
+<header class="head">
+    <div class="head__wrap">
+        <div class="head__logo">
+            <div id="logo">{% if logo %}<a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}"
+                                                                  alt="{{ name }}" class="img-responsive"/>
+                    </a>{% else %}
+                    <h1><a href="{{ home }}">{{ name }}</a></h1>
+                {% endif %}</div>
+        </div>
+        <div class="head__info">
+            <div class="head__email">
+                <i class="fa fa-envelope-o head__icon" aria-hidden="true"></i>
+                <span class="head__text">info@zooshop.ru</span>
+            </div>
+            <div class="head__phone">
+                <i class="fa fa-volume-control-phone head__icon" aria-hidden="true"></i>
+                <span class="head__text">{{ telephone }}</span>
+            </div>
+            <div class="head__schedule">
+                <i class="fa fa-clock-o head__icon" aria-hidden="true"></i>
+                <span class="head__text">Пн-Пт, с 9:00 до 18:00</span>
+            </div>
+        </div>
+        <div class="head__cart">
+            {{ cart }}
+        </div>
+    </div>
+</header>
+{#<header>
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -121,4 +149,4 @@
         </div>
     </div>
 </header>
-{{ menu }}
+{{ menu }}#}

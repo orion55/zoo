@@ -193,6 +193,112 @@ a.nav__link:hover {
   color: #f7e0ca;
 }
 
+.head {
+  background-color: white;
+}
+
+.head__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 1140px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.head__logo {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: -webkit-calc(25% - 0px);
+  width: calc(25% - 0px);
+}
+
+.head__info {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: -webkit-calc(66.66667% - 0px);
+  width: calc(66.66667% - 0px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.head__cart {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: -webkit-calc(8.33333% - 0px);
+  width: calc(8.33333% - 0px);
+}
+
+.head__email,
+.head__phone,
+.head__schedule {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: -webkit-calc(33.33333% - 0px);
+  width: calc(33.33333% - 0px);
+  position: relative;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.head__logo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#logo > a > img {
+  height: 70px;
+}
+
+.head__email {
+  background-color: #f5effe;
+}
+
+.head__phone {
+  background-color: #f1e8ff;
+}
+
+.head__schedule {
+  background-color: #f5effe;
+}
+
+.head__text {
+  font-size: 20px;
+  color: #8c76ad;
+}
+
+.head__icon {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  color: #b5b5b5;
+}
+
 @media only screen and (min-device-width: 768px) and (max-width: 1199px) {
   html,
   body {
@@ -210,6 +316,28 @@ a.nav__link:hover {
     width: -webkit-calc(25% - 0px);
     width: calc(25% - 0px);
   }
+
+  .head__logo {
+    width: -webkit-calc(25% - 0px);
+    width: calc(25% - 0px);
+  }
+
+  .head__info {
+    width: -webkit-calc(66.66667% - 0px);
+    width: calc(66.66667% - 0px);
+  }
+
+  .head__cart {
+    width: -webkit-calc(8.33333% - 0px);
+    width: calc(8.33333% - 0px);
+  }
+
+  .head__email,
+  .head__phone,
+  .head__schedule {
+    width: -webkit-calc(33.33333% - 0px);
+    width: calc(33.33333% - 0px);
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -221,6 +349,28 @@ a.nav__link:hover {
   .header__account {
     width: -webkit-calc(25% - 0px);
     width: calc(25% - 0px);
+  }
+
+  .head__logo {
+    width: -webkit-calc(25% - 0px);
+    width: calc(25% - 0px);
+  }
+
+  .head__info {
+    width: -webkit-calc(66.66667% - 0px);
+    width: calc(66.66667% - 0px);
+  }
+
+  .head__cart {
+    width: -webkit-calc(8.33333% - 0px);
+    width: calc(8.33333% - 0px);
+  }
+
+  .head__email,
+  .head__phone,
+  .head__schedule {
+    width: -webkit-calc(33.33333% - 0px);
+    width: calc(33.33333% - 0px);
   }
 }
 
@@ -241,6 +391,28 @@ a.nav__link:hover {
     width: -webkit-calc(100% - 0px);
     width: calc(100% - 0px);
   }
+
+  .head__logo {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+
+  .head__info {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+
+  .head__cart {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+
+  .head__email,
+  .head__phone,
+  .head__schedule {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -250,6 +422,28 @@ a.nav__link:hover {
   }
 
   .header__account {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+
+  .head__logo {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+
+  .head__info {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+
+  .head__cart {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+
+  .head__email,
+  .head__phone,
+  .head__schedule {
     width: -webkit-calc(100% - 0px);
     width: calc(100% - 0px);
   }

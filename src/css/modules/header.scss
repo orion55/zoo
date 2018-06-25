@@ -80,3 +80,87 @@ a.nav__link {
     }
   }
 }
+
+.head {
+  background-color: white;
+}
+
+.head__wrap {
+  @include row-flex();
+  width: 1140px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.head__logo {
+  @include col();
+  @include size(3);
+  @include size-lg(3);
+  @include size-md(3);
+  @include size-sm(12);
+  @include size-xs(12);
+}
+
+.head__info {
+  @include col();
+  @include size(8);
+  @include size-lg(8);
+  @include size-md(8);
+  @include size-sm(12);
+  @include size-xs(12);
+  @include row-flex();
+}
+
+.head__cart {
+  @include col();
+  @include size(1);
+  @include size-lg(1);
+  @include size-md(1);
+  @include size-sm(12);
+  @include size-xs(12);
+}
+
+.head__email, .head__phone, .head__schedule {
+  @include col();
+  @include size(4);
+  @include size-lg(4);
+  @include size-md(4);
+  @include size-sm(12);
+  @include size-xs(12);
+  position: relative;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.head__logo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#logo > a > img {
+  height: 70px;
+}
+
+.head__email {
+  background-color: #f5effe;
+}
+
+.head__phone {
+  background-color: #f1e8ff;
+}
+
+.head__schedule {
+  background-color: #f5effe;
+}
+
+.head__text {
+  font-size: 20px;
+  color: #8c76ad;
+}
+
+.head__icon {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  color: #b5b5b5;
+}

@@ -90,7 +90,7 @@ gulp.task('fonts', function () {
 gulp.task('watch', ['browser-sync'], function () {
     gulp.watch(['./css/**/*.scss', './css/main.scss'], ['sass', 'bs-reload']);
     gulp.watch('../catalog/view/theme/zoo/template/**/*.twig', ['bs-reload']);
-    gulp.watch('./js/!*.js', ['js', 'bs-reload']);
+    gulp.watch('./js/*.js', ['js', 'bs-reload']);
     gulp.watch('./img/**/*', ['images', 'bs-reload']);
 });
 

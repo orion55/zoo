@@ -15,9 +15,9 @@
   @include col();
   @include size(9);
   @include size-lg(9);
-  @include size-md(9);
-  @include size-sm(12);
-  @include size-xs(12);
+  //@include size-md(9);
+  //@include size-sm(12);
+  //@include size-xs(12);
 }
 
 .nav__list {
@@ -45,8 +45,8 @@ a.nav__link {
   @include size(3);
   @include size-lg(3);
   @include size-md(3);
-  @include size-sm(12);
-  @include size-xs(12);
+  @include size-sm(6);
+  @include size-xs(6);
   background-color: #b398db;
   .dropdown-menu {
     width: 100%;
@@ -124,8 +124,8 @@ a.nav__link {
   @include size(4);
   @include size-lg(4);
   @include size-md(4);
-  @include size-sm(12);
-  @include size-xs(12);
+  @include size-sm(6);
+  @include size-xs(6);
   position: relative;
   padding-top: 35px;
   text-align: center;
@@ -203,6 +203,19 @@ a.nav__link {
   margin-bottom: 0;
 }
 
+#mmenu-icon .hamburger-inner, #mmenu-icon .hamburger-inner:after, #mmenu-icon .hamburger-inner:before {
+  background-color: white;
+}
+
+.header__hamburger {
+  @include col();
+  @include size(6);
+  @include size-md(4);
+  @include size-sm(6);
+  @include size-xs(6);
+  display: none;
+}
+
 @media only screen and (min-device-width: 961px) and (max-width: 1199px) {
   .header__wrap {
     width: auto;
@@ -232,7 +245,7 @@ a.nav__link {
     font-size: 17px;
     white-space: normal;
   }
-  #logo{
+  #logo {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -244,5 +257,32 @@ a.nav__link {
   }
   .head__wrap {
     width: auto;
+  }
+  .header__hamburger {
+    display: block;
+  }
+  .nav__list {
+    flex-direction: column;
+  }
+  .nav__item {
+    text-align: center;
+    padding-right: 0;
+  }
+  .nav__link {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .header__menu {
+    width: 80%;
+  }
+  .head__schedule {
+    display: none;
+  }
+  #logo > a > img {
+    margin: 0 auto;
+  }
+  .head__email, .head__phone {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }

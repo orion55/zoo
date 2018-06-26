@@ -1,1 +1,70 @@
 @import "../base/_vars";
+
+.footer {
+  background-color: white;
+}
+
+.footer__wrap {
+  @include row-flex();
+  width: 1140px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+li.nav__item--footer {
+  padding-top: 17px;
+  padding-bottom: 13px;
+}
+
+a.nav__link--footer {
+  color: black;
+  transition: color .5s;
+  &:hover {
+    color: $color-main;
+  }
+}
+
+.footer__menu {
+  @include col();
+  @include size(9);
+  @include size-lg(9);
+  @include size-md(9);
+  @include size-sm(12);
+  @include size-xs(12);
+}
+
+.footer__social {
+  @include col();
+  @include size(3);
+  @include size-lg(3);
+  @include size-md(3);
+  @include size-sm(12);
+  @include size-xs(12);
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.social__link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  color: #826e9e;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.social__link--one {
+  background-color: #c5a5f2;
+}
+
+.social__link--two {
+  background-color: #d2c0dd;
+}
+
+.social__link--tree {
+  background-color: #cda3ed;
+}

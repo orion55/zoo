@@ -216,6 +216,14 @@ a.nav__link {
   display: none;
 }
 
+div.head__email > span > a {
+  color: #8c76ad;
+}
+
+#logo > a > img {
+  margin: 0 auto;
+}
+
 @media only screen and (min-device-width: 961px) and (max-width: 1199px) {
   .header__wrap {
     width: auto;
@@ -278,11 +286,11 @@ a.nav__link {
   .head__schedule {
     display: none;
   }
-  #logo > a > img {
-    margin: 0 auto;
-  }
   .head__email, .head__phone {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  #cart > ul.dropdown-menu {
+    width: 100%;
   }
 }

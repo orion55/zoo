@@ -1,0 +1,46 @@
+<footer>
+    <div class="footer">
+        <div class="footer__wrap">
+            <nav class="footer__menu nav">
+                <ul class="nav__list nav__list--footer">
+                    <li class="nav__item nav__item--footer"><a href="#" class="nav__link nav__link--footer">Условия
+                            сотрудничества</a></li>
+                    <li class="nav__item nav__item--footer"><a href="#" class="nav__link nav__link--footer">Договор
+                            поставки</a></li>
+                    <li class="nav__item nav__item--footer"><a href="#" class="nav__link nav__link--footer">Доставка</a>
+                    </li>
+                    <li class="nav__item nav__item--footer"><a href="#" class="nav__link nav__link--footer">Оплата</a>
+                    </li>
+                    <li class="nav__item nav__item--footer"><a href="#" class="nav__link nav__link--footer">Частые
+                            вопросы</a></li>
+                </ul>
+            </nav>
+            <div class="footer__social">
+                <ul class="social__list">
+                    <li class="social__item"><a href="#" class="social__link social__link--one"><i class="fa fa-vk"
+                                                                                                   aria-hidden="true"></i></a>
+                    </li>
+                    <li class="social__item"><a href="#" class="social__link social__link--two"><i
+                                    class="fa fa-facebook"
+                                    aria-hidden="true"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link social__link--tree"><i
+                                    class="fa fa-instagram"
+                                    aria-hidden="true"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link social__link--one"><i
+                                    class="fa fa-odnoklassniki"
+                                    aria-hidden="true"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link social__link--two"><i
+                                    class="fa fa-youtube-play"
+                                    aria-hidden="true"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link social__link--tree"><i
+                                    class="fa fa-envelope-o"
+                                    aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+{% for script in scripts %}
+    <script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+</body></html>

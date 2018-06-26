@@ -24,6 +24,10 @@ gulp.task('browser-sync', function () {
     });
 });
 
+gulp.task('bs-reload', function () {
+    browserSync.reload();
+});
+
 gulp.task('sass', function () {
     subfolder = 'css';
     gulp.src(['./css/main.scss'])
@@ -84,10 +88,10 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('watch', ['browser-sync'], function () {
-    gulp.watch(['./css/**/*.scss', './css/main.scss'], ['sass', browserSync.reload]);
-    gulp.watch('../catalog/view/theme/zoo/template/**/*.twig', [browserSync.reload]);
-    gulp.watch('./js/!*.js', ['js', browserSync.reload]);
-    gulp.watch('./img/!**/!*', ['images', browserSync.reload]);
+    gulp.watch(['./css/**/*.scss', './css/main.scss'], ['sass', 'bs-reload']);
+    gulp.watch('../catalog/view/theme/zoo/template/**/*.twig', ['bs-reload']);
+    gulp.watch('./js/!*.js', ['js', 'bs-reload']);
+    gulp.watch('./img/**/*', ['images', 'bs-reload']);
 });
 
 gulp.task('default', ['watch']);

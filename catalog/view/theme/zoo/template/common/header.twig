@@ -22,7 +22,12 @@
     <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
     <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
     <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="catalog/view/theme/zoo/javascript/jquery.mmenu.all.js" type="text/javascript"></script>
+    <script src="catalog/view/theme/zoo/javascript/main.min.js" type="text/javascript"></script>
+
     <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="catalog/view/theme/zoo/stylesheet/hamburgers.min.css" rel="stylesheet">
+    <link href="catalog/view/theme/zoo/stylesheet/jquery.mmenu.all.css" rel="stylesheet">
     <link href="catalog/view/theme/zoo/stylesheet/main.min.css" rel="stylesheet">
     {% for style in styles %}
         <link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}"/>
@@ -41,7 +46,9 @@
 <body>
 <div class="header" id="top">
     <div class="header__wrap">
-        <div class="header__menu nav">
+        <button class="hamburger hamburger--collapse col-xs-2" id="mmenu-icon" type="button"><span
+                    class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+        <nav class="header__menu nav" id="my-menu">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#" class="nav__link">Условия сотрудничества</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Договор поставки</a></li>
@@ -49,7 +56,7 @@
                 <li class="nav__item"><a href="#" class="nav__link">Оплата</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Частые вопросы</a></li>
             </ul>
-        </div>
+        </nav>
         <div class="header__account">
             <div class="dropdown">
                 <a href="{{ account }}" title="{{ text_account }}" class="dropdown-toggle"

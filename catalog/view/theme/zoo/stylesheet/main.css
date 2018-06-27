@@ -373,7 +373,8 @@ div.head__email > span > a {
   background-color: white;
 }
 
-.footer__wrap {
+.footer__wrap,
+.tomb__wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -410,8 +411,8 @@ a.nav__link--footer:hover {
   word-wrap: break-word;
   margin-left: 0px;
   margin-right: 0px;
-  width: -webkit-calc(75% - 0px);
-  width: calc(75% - 0px);
+  width: -webkit-calc(66.66667% - 0px);
+  width: calc(66.66667% - 0px);
 }
 
 .footer__social {
@@ -420,8 +421,12 @@ a.nav__link--footer:hover {
   word-wrap: break-word;
   margin-left: 0px;
   margin-right: 0px;
-  width: -webkit-calc(25% - 0px);
-  width: calc(25% - 0px);
+  width: -webkit-calc(33.33333% - 0px);
+  width: calc(33.33333% - 0px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .social__list {
@@ -434,6 +439,7 @@ a.nav__link--footer:hover {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-left: auto;
 }
 
 .social__link {
@@ -444,6 +450,13 @@ a.nav__link--footer:hover {
   color: #826e9e;
   text-align: center;
   padding-top: 10px;
+  -webkit-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s;
+}
+
+.social__link:hover {
+  color: white;
 }
 
 .social__link--one {
@@ -456,6 +469,43 @@ a.nav__link--footer:hover {
 
 .social__link--tree {
   background-color: #cda3ed;
+}
+
+.tomb {
+  background-color: #8c76ad;
+}
+
+.tomb__address,
+.tomb__info {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: -webkit-calc(50% - 0px);
+  width: calc(50% - 0px);
+  font-size: 12px;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tomb__address {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.tomb__info {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: right;
 }
 
 @media only screen and (min-device-width: 768px) and (max-width: 1199px) {
@@ -472,6 +522,19 @@ a.nav__link--footer:hover {
 
   .head__wrap {
     width: auto;
+  }
+
+  .footer__wrap,
+  .tomb__wrap {
+    width: auto;
+  }
+
+  .tomb__address {
+    padding-left: 10px;
+  }
+
+  .tomb__info {
+    padding-right: 10px;
   }
 }
 
@@ -509,13 +572,19 @@ a.nav__link--footer:hover {
   }
 
   .footer__menu {
-    width: -webkit-calc(75% - 0px);
-    width: calc(75% - 0px);
+    width: -webkit-calc(66.66667% - 0px);
+    width: calc(66.66667% - 0px);
   }
 
   .footer__social {
-    width: -webkit-calc(25% - 0px);
-    width: calc(25% - 0px);
+    width: -webkit-calc(33.33333% - 0px);
+    width: calc(33.33333% - 0px);
+  }
+
+  .tomb__address,
+  .tomb__info {
+    width: -webkit-calc(50% - 0px);
+    width: calc(50% - 0px);
   }
 }
 
@@ -553,13 +622,19 @@ a.nav__link--footer:hover {
   }
 
   .footer__menu {
-    width: -webkit-calc(75% - 0px);
-    width: calc(75% - 0px);
+    width: -webkit-calc(66.66667% - 0px);
+    width: calc(66.66667% - 0px);
   }
 
   .footer__social {
-    width: -webkit-calc(25% - 0px);
-    width: calc(25% - 0px);
+    width: -webkit-calc(33.33333% - 0px);
+    width: calc(33.33333% - 0px);
+  }
+
+  .tomb__address,
+  .tomb__info {
+    width: -webkit-calc(50% - 0px);
+    width: calc(50% - 0px);
   }
 }
 
@@ -593,6 +668,37 @@ a.nav__link--footer:hover {
 
   #logo {
     padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer__wrap,
+  .tomb__wrap {
+    width: auto;
+  }
+
+  .nav__item {
+    padding-right: 0;
+  }
+
+  .nav__list {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  a.nav__link--footer {
+    font-size: 11px;
+  }
+
+  .social__link {
+    width: 40px;
+  }
+
+  .tomb__address {
+    padding-left: 10px;
+  }
+
+  .tomb__info {
     padding-right: 10px;
   }
 }
@@ -650,6 +756,11 @@ a.nav__link--footer:hover {
   #cart > ul.dropdown-menu {
     width: 100%;
   }
+
+  .footer__wrap,
+  .tomb__wrap {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -694,6 +805,12 @@ a.nav__link--footer:hover {
     width: -webkit-calc(100% - 0px);
     width: calc(100% - 0px);
   }
+
+  .tomb__address,
+  .tomb__info {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -735,6 +852,12 @@ a.nav__link--footer:hover {
   }
 
   .footer__social {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+
+  .tomb__address,
+  .tomb__info {
     width: -webkit-calc(100% - 0px);
     width: calc(100% - 0px);
   }

@@ -27,8 +27,8 @@ class ControllerExtensionModuleCategory extends Controller {
 
 		$data['categories'] = array();
 
-		$categories = $this->model_catalog_category->getCategories(0);
-
+		$categories = $this->model_catalog_category->getCategories(0);		
+		
 		foreach ($categories as $category) {
 			$children_data = array();
 
@@ -55,10 +55,11 @@ class ControllerExtensionModuleCategory extends Controller {
 				'category_id' => $category['category_id'],
 				'name'        => $category['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
 				'children'    => $children_data,
-				'href'        => $this->url->link('product/category', 'path=' . $category['category_id'])
+				'href'        => $this->url->link('product/category', 'path=' . $category['category_id']),
+				'image' 	  => $category['image']				
 			);
 		}
-
+				
 		return $this->load->view('extension/module/category', $data);
 	}
 }

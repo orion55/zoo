@@ -144,6 +144,9 @@ a.nav__link--footer {
   .footer__wrap, .tomb__wrap {
     width: auto;
   }
+  .footer__wrap {
+    //background-color: #8c76ad;
+  }
   .nav__list--footer {
     display: none;
   }
@@ -152,5 +155,15 @@ a.nav__link--footer {
   }
   .tomb__address, .tomb__info {
     justify-content: center;
+    text-align: center;
+  }
+  .tomb__address {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .tomb__info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
   }
 }

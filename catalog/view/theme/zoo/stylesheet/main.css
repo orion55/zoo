@@ -776,6 +776,17 @@ a.nav__link--footer:hover {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    text-align: center;
+  }
+
+  .tomb__address {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .tomb__info {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 

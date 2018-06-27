@@ -761,6 +761,22 @@ a.nav__link--footer:hover {
   .tomb__wrap {
     width: auto;
   }
+
+  .nav__list--footer {
+    display: none;
+  }
+
+  .social__list {
+    margin: 0 auto;
+  }
+
+  .tomb__address,
+  .tomb__info {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 767px) {

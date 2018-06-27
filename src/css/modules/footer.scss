@@ -108,10 +108,10 @@ a.nav__link--footer {
   .footer__wrap, .tomb__wrap {
     width: auto;
   }
-  .tomb__address{
+  .tomb__address {
     padding-left: 10px;
   }
-  .tomb__info{
+  .tomb__info {
     padding-right: 10px;
   }
 }
@@ -126,16 +126,16 @@ a.nav__link--footer {
   .nav__list {
     justify-content: space-around;
   }
-  a.nav__link--footer{
+  a.nav__link--footer {
     font-size: 11px;
   }
-  .social__link{
+  .social__link {
     width: 40px;
   }
-  .tomb__address{
+  .tomb__address {
     padding-left: 10px;
   }
-  .tomb__info{
+  .tomb__info {
     padding-right: 10px;
   }
 }
@@ -143,5 +143,14 @@ a.nav__link--footer {
 @media only screen and (max-width: 767px) {
   .footer__wrap, .tomb__wrap {
     width: auto;
+  }
+  .nav__list--footer {
+    display: none;
+  }
+  .social__list {
+    margin: 0 auto;
+  }
+  .tomb__address, .tomb__info {
+    justify-content: center;
   }
 }

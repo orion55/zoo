@@ -27,6 +27,7 @@
     "hamburgers": "^0.9.3",
     "imagemin-pngquant": "^5.0.1",
     "jquery.mmenu": "^7.0.5",
+    "masonry-layout": "^4.2.1",
     "smart-grid": "^2.0.1"
   },
   "dependencies": {

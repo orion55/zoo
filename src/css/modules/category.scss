@@ -1,19 +1,19 @@
 @import "../base/_vars";
 
 .category {
-  @include row-flex();
+  //@include row-flex();
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .category__item {
   display: block;
-  @include col();
-  @include size(3);
-  @include size-lg(3);
-  @include size-md(3);
-  @include size-sm(12);
-  @include size-xs(12);
+  /*  @include col();
+    @include size(3);
+    @include size-lg(3);
+    @include size-md(3);
+    @include size-sm(12);
+    @include size-xs(12);*/
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   background-color: white;
   width: calc(25% - 20px);
@@ -58,4 +58,20 @@
   background-color: rgba(140, 118, 173, .7);
   color: white;
   padding: 10px;
+}
+
+@media only screen and (min-device-width: 961px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-width: 960px) {
+  .category__item {
+    width: calc(33% - 20px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .category__item {
+    width: calc(100% - 10px);
+  }
 }

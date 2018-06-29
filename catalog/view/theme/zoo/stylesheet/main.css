@@ -509,28 +509,18 @@ a.nav__link--footer:hover {
 }
 
 .category {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
-  margin-right: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .category__item {
   display: block;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: -webkit-calc(25% - 0px);
-  width: calc(25% - 0px);
+  /*  @include col();
+    @include size(3);
+    @include size-lg(3);
+    @include size-md(3);
+    @include size-sm(12);
+    @include size-xs(12);*/
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   background-color: white;
@@ -664,11 +654,6 @@ a.nav__link--footer:hover {
     width: -webkit-calc(50% - 0px);
     width: calc(50% - 0px);
   }
-
-  .category__item {
-    width: -webkit-calc(25% - 0px);
-    width: calc(25% - 0px);
-  }
 }
 
 @media screen and (max-width: 960px) {
@@ -718,11 +703,6 @@ a.nav__link--footer:hover {
   .tomb__info {
     width: -webkit-calc(50% - 0px);
     width: calc(50% - 0px);
-  }
-
-  .category__item {
-    width: -webkit-calc(25% - 0px);
-    width: calc(25% - 0px);
   }
 }
 
@@ -788,6 +768,11 @@ a.nav__link--footer:hover {
 
   .tomb__info {
     padding-right: 10px;
+  }
+
+  .category__item {
+    width: -webkit-calc(33% - 20px);
+    width: calc(33% - 20px);
   }
 }
 
@@ -876,6 +861,11 @@ a.nav__link--footer:hover {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  .category__item {
+    width: -webkit-calc(100% - 10px);
+    width: calc(100% - 10px);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -926,11 +916,6 @@ a.nav__link--footer:hover {
     width: -webkit-calc(100% - 0px);
     width: calc(100% - 0px);
   }
-
-  .category__item {
-    width: -webkit-calc(100% - 0px);
-    width: calc(100% - 0px);
-  }
 }
 
 @media screen and (max-width: 560px) {
@@ -978,11 +963,6 @@ a.nav__link--footer:hover {
 
   .tomb__address,
   .tomb__info {
-    width: -webkit-calc(100% - 0px);
-    width: calc(100% - 0px);
-  }
-
-  .category__item {
     width: -webkit-calc(100% - 0px);
     width: calc(100% - 0px);
   }

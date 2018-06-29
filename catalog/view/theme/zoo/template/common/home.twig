@@ -11,10 +11,14 @@
         {% endif %}
         <div id="content" class="{{ class }}">
             {{ content_top }}
-            <div class="list-group">
+            <div class="category">
                 {% for category in categories %}
-                    <a href="{{ category.href }}" class="list-group-item">{{ category.name }}</a>
-                    <img src="image/{{ category.image }}" alt="">
+                    <a href="{{ category.href }}" class="category__item">
+                        <div class="category__title">{{ category.name }}</div>
+                        <div class="category__picture">
+                            <img src="image/{{ category.image }}" alt="{{ category.name }}" class="category__img">
+                        </div>
+                    </a>
                 {% endfor %}
             </div>
             {{ content_bottom }}
